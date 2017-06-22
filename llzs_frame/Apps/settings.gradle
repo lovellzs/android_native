@@ -1,0 +1,7 @@
+include ':pili', ':myapplication'
+
+include ":baselib"
+project(":baselib").projectDir = new File("../libs/baselib")
+
+include ":baseproduct"
+project(":baseproduct").projectDir = new File("../libs/baseproduct")
